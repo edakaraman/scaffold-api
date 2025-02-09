@@ -1,0 +1,69 @@
+### Get All Students
+GET http://localhost:5015/api/students
+Accept: application/json
+
+###
+
+### Get Student by ID
+GET http://localhost:5015/api/students/1
+Accept: application/json
+
+###
+
+### Delete Student by ID
+DELETE http://localhost:5015/api/students/1
+Accept: application/json
+
+###
+
+### Get Active Students
+GET http://localhost:5015/api/students/active
+Accept: application/json
+
+###
+
+### Get Students Grouped by Year
+GET http://localhost:5015/api/students/group-by-year
+Accept: application/json
+
+###
+
+### Get Students Sorted by Name
+GET http://localhost:5015/api/students/sorted-by-name
+Accept: application/json
+
+###
+
+### Get Distinct Student Names
+GET http://localhost:5015/api/students/distinct-names
+Accept: application/json
+
+###
+
+### Get Students by Age or Name
+GET http://localhost:5015/api/students/age-or-name?year=2000&name=John
+Accept: application/json
+
+###
+
+### Get Student Full Names
+GET http://localhost:5015/api/students/fullnames
+Accept: application/json
+
+###
+
+### Get Students Filtered by Column Name
+GET http://localhost:5015/api/students/columnName
+Accept: application/json
+
+### POST Student
+POST http://localhost:5015/api/students/studentAdd
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Test",
+    "surName": "Test",
+    "birthDate": "2000-02-22",
+    "isActive": true
+}
